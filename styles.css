@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px dotted red; */
+}
+
+html {
+  background: #b2bec3;
+  background-image: url("img/space.png");
+  background-size: cover;
+  font-family: "Russo One", sans-serif;
+  color: #0984e3;
+  text-align: center;
+  padding-top: 5%;
+}
+
+body {
+  height: 100vh;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: 95% 45%;
+  background-attachment: local;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  height: 50px;
+  width: 150px;
+  border-radius: 10%;
+  font-size: 20px;
+  background-color: #fdcb6e;
+  font-weight: bolder;
+}
+
+button:hover {
+  background: #ffeaa7;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+span {
+  font-size: 18px;
+  display: inline-block;
+  clear: both;
+  width: 450px;
+  margin: 10px;
+}
+
+fieldset {
+  text-align: left;
+  margin-bottom: 10px;
+  border: none;
+}
+
+h2,
+span {
+  color: #0984e3;
+}
+
+h2 {
+  height: max-content;
+}
+
+.answer-choices {
+  padding: 20px 0;
+  max-height: 600px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.possible-answer {
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.answer-description {
+  right: 30px;
+  display: inline-block;
+  max-width: 100vw;
+  height: auto;
+}
+
+.answer-container {
+  width: 15px;
+  margin-top: 10px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.red {
+  color: #d63031;
+}
+
+.green {
+  color: #00b894;
+}
+
+.foo {
+  max-width: max-content;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+.start-button {
+  margin-top: 20px;
+}
+
+.correct,
+.incorrect {
+  width: max-content;
+}
+
+.answer-description {
+  min-height: 50px;
+}
+
+.question-box {
+  padding-bottom: 30px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* For mobile */
+@media only screen and (max-width: 650px) {
+  body {
+    padding: 10px;
+  }
+  .answer-description {
+    max-width: 90vw;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    padding: 5px;
+  }
+  .current-question {
+    background-color: rgba(99, 110, 114, 0.7);
+  }
+
+  .answer-description {
+    max-width: 90vw;
+    height: auto;
+  }
+}
